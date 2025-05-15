@@ -27,7 +27,7 @@ Smart Flashcard Generator is a web application that transforms study material in
    ```bash
    cd smart-flashcard-generator
 
-3. Open index.html 
+3. Open `index.html` 
 
 
 
