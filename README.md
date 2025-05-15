@@ -41,6 +41,7 @@ Smart Flashcard Generator is a web application that transforms study material in
 
 ## File Structure
 - `index.html` - HTML layout and structure
+- `script.js` - Javascript for functionality
 - `styles.css` - Styling and animations
 
 
