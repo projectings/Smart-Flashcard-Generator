@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Flashcard Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Flashcard Generator</h1>
+            <p class="subtitle">Transform your notes into interactive learning materials</p>
+        </header>
+        
+        <div class="card">
+            <div class="card-header">
+                <span>Create Your Flashcards</span>
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label for="input-text">Enter Your Study Material</label>
+                    <textarea id="input-text" placeholder="Paste your notes, definitions, concepts, or any information you want to study..."></textarea>
+                </div>
+                
+                <div class="options-row">
+                    <div class="option-toggle">
+                        <input type="checkbox" id="auto-generate" checked>
+                        <label for="auto-generate">Auto-generate questions</label>
+                    </div>
+                    <div class="option-toggle">
+                        <input type="checkbox" id="include-definitions" checked>
+                        <label for="include-definitions">Definition questions</label>
+                    </div>
+                    <div class="option-toggle">
+                        <input type="checkbox" id="include-conceptual" checked>
+                        <label for="include-conceptual">Conceptual questions</label>
+                    </div>
+                    <div class="option-toggle">
+                        <input type="checkbox" id="include-fill-blanks" checked>
+                        <label for="include-fill-blanks">Fill-in-the-blank</label>
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+                    <button id="generate-btn" class="btn">
+                        <i class="fas fa-magic"></i>
+                        Generate Flashcards
+                    </button>
+                    <button id="example-btn" class="btn btn-secondary">
+                        <i class="fas fa-lightbulb"></i>
+                        Load Example
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="flashcard-section" class="card">
+            <div class="card-header">
+                <span>Your Flashcard Deck</span>
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="card-body">
+                <div class="deck-info">
+                    <div class="deck-stat">
+                        <div class="stat-value" id="total-cards-stat">0</div>
+                        <div class="stat-label">Total Cards</div>
+                    </div>
+                    <div class="deck-stat">
+                        <div class="stat-value" id="viewed-cards-stat">0</div>
+                        <div class="stat-label">Viewed</div>
+                    </div>
+                    <div class="deck-stat">
+                        <div class="stat-value" id="mastered-cards-stat">0</div>
+                        <div class="stat-label">Mastered</div>
+                    </div>
+                </div>
+                
+                <div class="tab-container">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="all">All Cards</div>
+                        <div class="tab" data-tab="definitions">Definitions</div>
+                        <div class="tab" data-tab="conceptual">Conceptual</div>
+                        <div class="tab" data-tab="fill-blanks">Fill-in-Blank</div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="card-side card-front">
+                            <div class="card-category" id="question-type">Definition</div>
+                            <button class="bookmark-btn" id="bookmark-btn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                            <div class="card-question" id="question">Question will appear here</div>
+                            <div class="difficulty-indicator medium">
+                                <span class="difficulty-dot"></span>
+                                <span class="difficulty-dot"></span>
+                                <span class="difficulty-dot"></span>
+                            </div>
+                        </div>
+                        <div class="card-side card-back">
+                            <div class="card-answer" id="answer">Answer will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-counter">
+                    Card <span id="current-card">1</span> of <span id="total-cards">0</span>
+                </div>
+                
+                <div class="controls">
+                    <button id="prev-btn" class="control-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button id="flip-btn" class="control-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Flip Card
+                    </button>
+                    <button id="next-btn" class="control-btn">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="btn-group">
+                    <button id="save-btn" class="btn">
+                        <i class="fas fa-save"></i>
+                        Save Deck
+                    </button>
+                    <button id="new-deck-btn" class="btn btn-secondary">
+                        <i class="fas fa-plus"></i>
+                        New Deck
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
