@@ -20,18 +20,15 @@ Smart Flashcard Generator is a web application that transforms study material in
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/smart-flashcard-generator.git
+   git clone https://github.com/projecctings/smart-flashcard-generator.git
 
 2. Navigate to the project folder:
 
    ```bash
    cd smart-flashcard-generator
 
-3. Open the app in your browser:
+3. Open index.html 
 
-   ```bash
-   open index.html
-   Or double-click index.html.
 
 
 ## Usage
@@ -43,7 +40,6 @@ Smart Flashcard Generator is a web application that transforms study material in
 
 
 ## File Structure
-smart-flashcard-generator/
 - `index.html` - HTML layout and structure
 - `styles.css` - Styling and animations
 
