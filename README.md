@@ -41,7 +41,6 @@ bash
 open index.html
 Or double-click index.html.
 
----
 
 ## Usage
 Paste your study material into the input box.
@@ -54,7 +53,6 @@ Flip through your cards, mark them as mastered, or bookmark them.
 
 Export, import, print, or shuffle your deck as needed.
 
----
 
 ## File Structure
 smart-flashcard-generator/
@@ -63,7 +61,6 @@ smart-flashcard-generator/
 ├── styles.css      # Styling and animations
 └── script.js       # Flashcard logic and interactivity
 
----
 
 ## Technologies Used
 HTML5
@@ -71,7 +68,6 @@ CSS3
 JavaScript (Vanilla)
 Font Awesome (CDN)
 
----
 
 ## License
 This project is licensed under the MIT License.
