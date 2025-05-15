@@ -35,15 +35,11 @@ Smart Flashcard Generator is a web application that transforms study material in
 
 
 ## Usage
-Paste your study material into the input box.
-
-Select which types of questions to generate.
-
-Click Generate Flashcards.
-
-Flip through your cards, mark them as mastered, or bookmark them.
-
-Export, import, print, or shuffle your deck as needed.
+1. Paste your study material into the input box.
+2. Select which types of questions to generate.
+3. Click Generate Flashcards.
+4. Flip through your cards, mark them as mastered, or bookmark them.
+5. Export, import, print, or shuffle your deck as needed.
 
 
 ## File Structure
@@ -51,11 +47,6 @@ smart-flashcard-generator/
 - `index.html` - HTML layout and structure
 - `styles.css` - Styling and animations
 
-## Technologies Used
-HTML5
-CSS3
-JavaScript (Vanilla)
-Font Awesome (CDN)
 
 ## License
 This project is licensed under the MIT License.
